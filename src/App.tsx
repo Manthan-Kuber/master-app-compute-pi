@@ -32,24 +32,90 @@ function App() {
         url: "http://localhost:4000",
         file: "part_1.txt",
       };
-      if (
-        randomNumsArr[i] >= 383025000000 &&
-        randomNumsArr[i] < 45215700000000
-      ) {
+      if (randomNumsArr[i] >= 4052720000 && randomNumsArr[i] < 34845800000) {
         urlObj.url = "http://localhost:4001";
         urlObj.file = "part_2.txt";
       }
       if (
-        randomNumsArr[i] >= 45215700000000 &&
-        randomNumsArr[i] < 9412040000000000
+        randomNumsArr[i] >= 34845800000 &&
+        randomNumsArr[i] < 81574100000
       ) {
         urlObj.url = "http://localhost:4002";
         urlObj.file = "part_3.txt";
       }
-      if (randomNumsArr[i] >= 9412040000000000) {
+      if (
+        randomNumsArr[i] >= 81574100000 &&
+        randomNumsArr[i] < 383023000000
+      ) {
         urlObj.url = "http://localhost:4003";
         urlObj.file = "part_4.txt";
       }
+      if (
+        randomNumsArr[i] >= 383023000000 &&
+        randomNumsArr[i] < 850306000000
+      ) {
+        urlObj.url = "http://localhost:4004";
+        urlObj.file = "part_5.txt";
+      }
+      if (
+        randomNumsArr[i] >= 850306000000 &&
+        randomNumsArr[i] < 4175880000000
+      ) {
+        urlObj.url = "http://localhost:4005";
+        urlObj.file = "part_6.txt";
+      }
+      if (
+        randomNumsArr[i] >= 4175880000000 &&
+        randomNumsArr[i] < 8848710000000
+      ) {
+        urlObj.url = "http://localhost:4006";
+        urlObj.file = "part_7.txt";
+      }
+      if (randomNumsArr[i] >= 8848710000000 &&
+        randomNumsArr[i] < 45215300000000) {
+        urlObj.url = "http://localhost:4007";
+        urlObj.file = "part_8.txt";
+      }
+      if (randomNumsArr[i] >= 8848710000000 &&
+        randomNumsArr[i] < 439350000000000) {
+        urlObj.url = "http://localhost:4008";
+        urlObj.file = "part_9.txt";
+      }
+      if (randomNumsArr[i] >= 439350000000000 &&
+        randomNumsArr[i] < 906633000000000) {
+        urlObj.url = "http://localhost:4009";
+        urlObj.file = "part_10.txt";
+      }
+      if (randomNumsArr[i] >= 906633000000000 &&
+        randomNumsArr[i] < 4739150000000000) {
+        urlObj.url = "http://localhost:4010";
+        urlObj.file = "part_11.txt";
+      }
+      if (randomNumsArr[i] >= 4739150000000000  &&
+        randomNumsArr[i] < 9411980000000000) {
+        urlObj.url = "http://localhost:4011";
+        urlObj.file = "part_12.txt";
+      }
+      if (randomNumsArr[i] >= 9411980000000000 &&
+        randomNumsArr[i] < 50848000000000000) {
+        urlObj.url = "http://localhost:4012";
+        urlObj.file = "part_13.txt";
+      }
+      if (randomNumsArr[i] >= 50848000000000000 &&
+        randomNumsArr[i] < 97576300000000000) {
+        urlObj.url = "http://localhost:4013";
+        urlObj.file = "part_14.txt";
+      }
+      if (randomNumsArr[i] >= 97576300000000000 &&
+        randomNumsArr[i] < 543045000000000000) {
+        urlObj.url = "http://localhost:4014";
+        urlObj.file = "part_15.txt";
+      }
+      if (randomNumsArr[i] >= 543045000000000000){
+        urlObj.url = "http://localhost:4015";
+        urlObj.file = "part_16.txt";
+      }
+      
       try {
         const tIni = window.performance.now();
         const res = await axios(
