@@ -27,7 +27,7 @@ function App() {
 
   const getPi = async () => {
     setIsLoading(true);
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < randomNumsArr.length; i++) {
       let urlObj = {
         url: "http://localhost:4000",
         file: "part_1.txt",
