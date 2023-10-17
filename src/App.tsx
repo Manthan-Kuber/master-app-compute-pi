@@ -27,14 +27,28 @@ function App() {
 
   const getPi = async () => {
     setIsLoading(true);
-    for (let i = 0; i < randomNumsArr.length; i++) {
+    for (let i = 0; i < 200; i++) {
       let urlObj = {
         url: "http://localhost:4000",
         file: "part_1.txt",
       };
-      if (randomNumsArr[i] >= 45215800000000) {
+      if (
+        randomNumsArr[i] >= 383025000000 &&
+        randomNumsArr[i] < 45215700000000
+      ) {
         urlObj.url = "http://localhost:4001";
         urlObj.file = "part_2.txt";
+      }
+      if (
+        randomNumsArr[i] >= 45215700000000 &&
+        randomNumsArr[i] < 9412040000000000
+      ) {
+        urlObj.url = "http://localhost:4002";
+        urlObj.file = "part_3.txt";
+      }
+      if (randomNumsArr[i] >= 9412040000000000) {
+        urlObj.url = "http://localhost:4003";
+        urlObj.file = "part_4.txt";
       }
       try {
         const tIni = window.performance.now();
